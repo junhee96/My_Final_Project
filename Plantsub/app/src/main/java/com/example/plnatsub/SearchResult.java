@@ -55,10 +55,6 @@ public class SearchResult extends AppCompatActivity {
         tv_first_percent.setText("일치율: "+plant_first_percent+"%");
         layout_result1.addView(tv_first_percent);
 
-        Button first_detail_btn = new Button(getApplicationContext());
-        first_detail_btn.setText("자세히 보기"); //첫번째 버튼
-        layout_result1.addView(first_detail_btn);
-
         String first_img_txt = intent.getExtras().getString("first_img_txt");
 
         ImageView flower_img1 = new ImageView(getApplicationContext());
@@ -66,7 +62,9 @@ public class SearchResult extends AppCompatActivity {
         layout_result1.addView(flower_img1);
 
         final String one = plant_first_name; // 첫번째 버튼에 해당
-
+        Button first_detail_btn = new Button(getApplicationContext());
+        first_detail_btn.setText("자세히 보기"); //첫번째 버튼
+        layout_result1.addView(first_detail_btn);
 
         first_detail_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -103,7 +101,7 @@ public class SearchResult extends AppCompatActivity {
                             intent.putExtra("img_txt",img_txt);
 
                             intent.putExtra("search_my_plant_images",search_my_plant_images);
-                            startActivity(intent);
+                                startActivity(intent);
 
                         }else{
                             int StatusCode =response.code();
@@ -116,12 +114,9 @@ public class SearchResult extends AppCompatActivity {
                         Log.d(TAG,"실패"+t.getMessage());
                     }
                 });
-                            startActivity(intent);
+
             }
         });
-
-
-
 
         String plant_second_name = intent.getExtras().getString("second_txt");
         String plant_second_percent = intent.getExtras().getString("second_percent_txt");
@@ -129,56 +124,59 @@ public class SearchResult extends AppCompatActivity {
         String plant_third_name = intent.getExtras().getString("third_txt");
         String plant_third_percent = intent.getExtras().getString("third_percent_txt");
 
-        if (Float.valueOf(plant_second_percent)>40.0 && Float.valueOf(plant_third_percent)>40.0 ) {
-
-
-
-        TextView tv_second_name = new TextView(getApplicationContext());
-        tv_second_name.setText(plant_second_name);
-        layout_result2.addView(tv_second_name);
-
-
-        TextView tv_second_percent = new TextView(getApplicationContext());
-        tv_second_percent.setText("일치율: "+plant_second_percent+"%");
-        layout_result2.addView(tv_second_percent);
-
-
-        TextView tv_third_name = new TextView(getApplicationContext());
-        tv_third_name.setText(plant_third_name);
-        layout_result3.addView(tv_third_name);
-
-
-        TextView tv_third_percent = new TextView(getApplicationContext());
-        tv_third_percent.setText("일치율: "+plant_third_percent+"%");
-        layout_result3.addView(tv_third_percent);
 
 
 
 
-        String second_img_txt = intent.getExtras().getString("second_img_txt");
-        String third_img_txt = intent.getExtras().getString("third_img_txt");
 
-
-        ImageView flower_img2 = new ImageView(getApplicationContext());
-        Picasso.get().load(second_img_txt).into(flower_img2);
-        layout_result2.addView(flower_img2);
-
-        ImageView flower_img3 = new ImageView(getApplicationContext());
-        Picasso.get().load(third_img_txt).into(flower_img3);
-        layout_result3.addView(flower_img3);
-
-        final String two = plant_second_name; // 두번째 버튼에 해당
-        final String three = plant_third_name;
+        if (Float.valueOf(plant_second_percent)>0.0 && Float.valueOf(plant_third_percent)>0.0 ) {
 
 
 
-        Button second_detail_btn = new Button(getApplicationContext());
-        second_detail_btn.setText("자세히 보기"); //첫번째 버튼
-        layout_result2.addView(second_detail_btn);
+            TextView tv_second_name = new TextView(getApplicationContext());
+            tv_second_name.setText(plant_second_name);
+            layout_result2.addView(tv_second_name);
 
-        Button third_detail_btn = new Button(getApplicationContext());
-        third_detail_btn.setText("자세히 보기"); //첫번째 버튼
-        layout_result3.addView(third_detail_btn);
+            TextView tv_second_percent = new TextView(getApplicationContext());
+            tv_second_percent.setText("일치율: "+plant_second_percent+"%");
+            layout_result2.addView(tv_second_percent);
+
+
+            TextView tv_third_name = new TextView(getApplicationContext());
+            tv_third_name.setText(plant_third_name);
+            layout_result3.addView(tv_third_name);
+
+            TextView tv_third_percent = new TextView(getApplicationContext());
+            tv_third_percent.setText("일치율: "+plant_third_percent+"%");
+            layout_result3.addView(tv_third_percent);
+
+
+
+            String second_img_txt = intent.getExtras().getString("second_img_txt");
+            String third_img_txt = intent.getExtras().getString("third_img_txt");
+
+
+            ImageView flower_img2 = new ImageView(getApplicationContext());
+            Picasso.get().load(second_img_txt).into(flower_img2);
+            layout_result2.addView(flower_img2);
+
+            ImageView flower_img3 = new ImageView(getApplicationContext());
+            Picasso.get().load(third_img_txt).into(flower_img3);
+            layout_result3.addView(flower_img3);
+
+            final String two = plant_second_name; // 두번째 버튼에 해당
+            final String three = plant_third_name;
+
+
+
+            Button second_detail_btn = new Button(getApplicationContext());
+            second_detail_btn.setText("자세히 보기");
+            layout_result2.addView(second_detail_btn);
+
+            Button third_detail_btn = new Button(getApplicationContext());
+            third_detail_btn.setText("자세히 보기");
+            layout_result3.addView(third_detail_btn);
+
 
 
 
