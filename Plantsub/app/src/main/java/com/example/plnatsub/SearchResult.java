@@ -129,7 +129,7 @@ public class SearchResult extends AppCompatActivity {
 
 
 
-        if (Float.valueOf(plant_second_percent)>0.0 && Float.valueOf(plant_third_percent)>0.0 ) {
+        if (Float.valueOf(plant_second_percent)>30.0 && Float.valueOf(plant_third_percent)>30.0 ) {
 
 
 
