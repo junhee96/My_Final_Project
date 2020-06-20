@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/camara_img"
+    tools:context=".SearchResult">
+
+    <LinearLayout
+        android:id="@+id/layout_result1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp"
+        android:background="#FEE7F2">
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_result2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp"
+        android:background="#FEE7F2">
+    </LinearLayout>
+    <LinearLayout
+    android:id="@+id/layout_result3"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:padding="8dp"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="8dp"
+    android:background="#FEE7F2">
+</LinearLayout>
+<!--        <ImageView-->
+<!--            android:id="@+id/flower_img1"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:src="@mipmap/ic_launcher"/>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/result1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:includeFontPadding="false"-->
+<!--                android:text="TITLE"-->
+<!--                android:fontFamily="@font/maplestory_bold"-->
+<!--                android:textSize="40sp"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textStyle="bold"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/result1_percent"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:includeFontPadding="false"-->
+<!--                android:fontFamily="@font/maplestory_light"-->
+<!--                android:text="content"-->
+<!--                android:textSize="25sp"-->
+<!--                android:textColor="@android:color/black"/>-->
+
+
+<!--        </LinearLayout>-->
+
+<!--&lt;!&ndash;        <view&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_weight="1"/>&ndash;&gt;-->
+
+<!--        <Button-->
+<!--            android:id="@+id/first_detail_btn"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="6dp"-->
+<!--            android:background="@drawable/btn_carmer"-->
+<!--            android:fontFamily="@font/maplestory_light"-->
+<!--            android:textSize="20dp"-->
+<!--            android:text="정보보기"/>-->
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:padding="8dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:background="#FEE7F2">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/flower_img2"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:src="@mipmap/ic_launcher"/>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/result2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:includeFontPadding="false"-->
+<!--                android:text="TITLE"-->
+<!--                android:fontFamily="@font/maplestory_bold"-->
+<!--                android:textSize="40sp"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textStyle="bold"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/result2_percent"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:includeFontPadding="false"-->
+<!--                android:text="content"-->
+<!--                android:fontFamily="@font/maplestory_light"-->
+<!--                android:textSize="25sp"-->
+<!--                android:textColor="@android:color/black"/>-->
+
+
+<!--        </LinearLayout>-->
+
+<!--&lt;!&ndash;        <view&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_weight="1"/>&ndash;&gt;-->
+
+<!--        <Button-->
+<!--            android:id="@+id/second_detail_btn"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="6dp"-->
+<!--            android:background="@drawable/btn_carmer"-->
+<!--            android:fontFamily="@font/maplestory_light"-->
+<!--            android:textSize="20dp"-->
+<!--            android:text="정보보기"/>-->
+
+<!--    </LinearLayout>-->
+
+
+
+</LinearLayout>
