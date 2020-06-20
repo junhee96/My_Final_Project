@@ -62,7 +62,7 @@ public class PlnatCarmer extends AppCompatActivity {
     private MyAPI mMyAPI;
     private final  String TAG = getClass().getSimpleName();
     // server의 url을 적어준다
-    private final String BASE_URL = "http://5d8cf485a554.ngrok.io";  //url주소
+    private final String BASE_URL = "http://6b95766df9f6.ngrok.io";  //url주소
     //    private final String BASE_URL = "http://127.0.0.1:5000/";
     Boolean album = false;
     private static final int REQUEST_IMAGE_CAPTURE = 672;

@@ -36,7 +36,7 @@ import static com.example.plnatsub.R.drawable.btn_carmer;
 
 public class PlantBook  extends AppCompatActivity {
 
-    private final String BASE_URL = "http://5d8cf485a554.ngrok.io"; //주소
+    private final String BASE_URL = "http://6b95766df9f6.ngrok.io"; //주소
 
 
     private MyAPI mMyAPI;

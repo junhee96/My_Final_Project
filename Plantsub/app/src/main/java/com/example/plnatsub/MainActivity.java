@@ -51,19 +51,16 @@ import java.util.concurrent.TimeUnit;
 public class MainActivity extends AppCompatActivity {
 
     Button main_btn1,main_btn2,main_btn3;
-    ImageView gallery_img;
     Boolean album = false;
     private final  String TAG = getClass().getSimpleName();
-    private static final int PICK_FROM_CAMERA = 0;
     private static final int PICK_FROM_ALBUM = 1;
     private static final int CROP_FROM_ALBUM = 2;
     Uri photoURI,albumURI = null;
     private MyAPI mMyAPI;
     String imageFilePath;
-    String mCurrentPhotoPath;
     String formatDate, android_id;
     // server의 url을 적어준다
-    private final String BASE_URL = "http://5d8cf485a554.ngrok.io";  //url주소
+    private final String BASE_URL = "http://6b95766df9f6.ngrok.io";  //url주소
 //    private final String BASE_URL = "http://127.0.0.1:5000/";
 
     @Override
